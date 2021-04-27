@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Special Input Types Demo</title>
+  </head>
+  <body>
+    <h3><center>Customer Registration</center></h3>
+    <br /><br />
+    <center>
+      <form name="custForm">
+        User Name :
+        <input
+          type="text"
+          name="username"
+          id="username"
+          maxlength="15"
+          pattern="^[0-9][A-Za-z]"
+          autofocus
+        />
+        <br /><br /><!-- focus is here when page is loaded) -->
+
+        Password :
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="8"
+          maxlength="12"
+          required
+          pattern="^[A-Za-z]+$"
+        />
+        <br /><br />
+        <!-- password should contain alphabets imposed using pattern attribute -->
+
+        Email :
+        <input
+          type="email"
+          size="30"
+          autocomplete="off"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+        <br /><br />
+        <!-- autocomplete provides auto fill feature when set to 'on' -->
+
+        Gender:
+        <input type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="female" />Female
+        <input type="radio" name="gender" value="others" />others <br /><br />
+        <!-- radio buttons-->
+
+        Age (Yrs) :
+        <input
+          type="text"
+          name="age"
+          id="age"
+          min="21"
+          max="60"
+          size="5"
+        /><br /><br />
+        <!-- required attribute : Age is necessary -->
+        Address:
+        <textarea name="address" id="address" cols="20" rows="4"></textarea>
+        <br /><br />
+
+        Company website: <br /><br />
+
+        Choose country:
+        <select name="country" id="country">
+          <option value="in">India</option>
+          <option value="us">United States</option>
+          <option value="ge">Germany</option>
+          <option value="jp">Japan</option>
+        </select>
+
+        <br /><br />
+
+        Date of Journey:
+
+        <input type="date" id="date" name="date" />
+
+        <br /><br />
+
+        <input type="submit" name="submit" id="submit" />
+      </form>
+    </center>
+  </body>
+</html>
