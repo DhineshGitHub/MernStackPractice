@@ -5,9 +5,71 @@
         color: blue;
         text-decoration: underline;
       }
+      p[id] {
+        color: green;
+      }
+      h2[id="1hID"] {
+        color: red;
+      }
+      #firstDiv .p1 {
+        font-style: italic;
+        background-color: orange;
+      }
+      ol > li {
+        border-top: 3px solid aqua;
+      }
+      h4 + p {
+        background-color: gray;
+        border-radius: 2px;
+        padding: 5px;
+        color: white;
+      }
+      h4 ~ p {
+        background-color: gray;
+        border-radius: 2px;
+        padding: 5px;
+        color: white;
+      }
     </style>
   </head>
   <body>
     <h1>Hello World</h1>
+    <p id="1pId">Hello</p>
+    <p id="2pId">Hello2</p>
+    <h2 id="hID">Kathirvel</h2>
+    <h2 id="1hID">KathirVel</h2>
+    <div id="firstDiv">
+      <p class="p1">This p tag is inside div tag</p>
+      <span>
+        <p>This is p inside span which is inside div</p>
+      </span>
+    </div>
+    <p class="p1">This p tag is next to div tag</p>
+
+    <ol>
+      <li>
+        Front-End
+        <ul>
+          <li>React</li>
+          <li>Angular</li>
+        </ul>
+      </li>
+      <li>
+        Back-End
+        <ul>
+          <li>Node</li>
+          <li>Express</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h4>Heading</h4>
+    <p>This is the paragraph next to the heading which has to be styled</p>
+    <p>This paragraph should not be styled</p>
+
+    <h4>Heading</h4>
+    <p>This is a paragraph</p>
+    <div>This is a div tag</div>
+    <p>This is another paragraph</p>
   </body>
 </html>
