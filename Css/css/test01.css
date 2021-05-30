@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+#tb a:link{
+    background-color: yellow;
+}
+
+#t01 a:visited{
+    color:#00FF00;
+}
